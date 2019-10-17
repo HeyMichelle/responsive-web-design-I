@@ -1,3 +1,276 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin-top: 200;
+	padding: 200;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
 
 
+/* /* Header nav, IOD text, and image for the top section  */
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 2% 5%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-end;
+    align-items: flex-end;
+    padding: 2%;
+}
+
+nav a {
+    text-decoration: none;
+    color: gray;
+    text-align: center;
+    padding: 1% 3%;
+    cursor: pointer;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.top {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    text-align: center;
+    padding-bottom: 2%;
+    border-bottom: 2px solid black;
+}
+
+h1 {
+    font-size: 75px;
+}
+
+button {
+    background-color: white;
+    text-align: center;
+        width: 50%;
+    height: 7%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+.above-image {
+    display: flex;
+    justify-content: space-around;
+    padding: 1% 0%;
+}
+
+.middle-img {
+    width: 100%;
+}
+
+.below-image {
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 0%;
+}
+
+.contact {
+    padding-top: 3%;
+    border-top: 2px solid black;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+	font-size: 14px;
+}
+
+/* media queries  */
+
+@media(max-width: 1600px) {
+    .alt-view {
+        display: none;
+    }
+}
+
+@media(max-width: 800px) {
+    .container {
+        max-width: 800px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .alt-view {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    /* .logo {
+        width: 50%;
+        height: 50px;
+        padding-bottom: 4%;
+    } */
+
+    nav {
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+    }
+
+    nav a {
+        border-top: 1px solid darkgray;  
+        /* I'm leaving the border, it looks better */
+        border-bottom: 1px solid darkgray;
+        padding-top: 4%;
+        padding-bottom: 4%;   
+        width: 100%; 
+        order: 2;
+    }
+
+   .header-image {
+        display: none;
+    }
+
+    .top {
+        flex-direction: column;
+        padding-bottom: 10%;
+    }
+
+    button {
+        width: 30%;    
+    }
+}
+
+@media(max-width: 500px) {
+
+  /* I don't think I need the container class below/no noticeable changes w or w/o.  */
+    .container {
+        max-width: 500px;
+    }
+
+    .alt-view {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    /* .logo {
+        width: 50%;
+        height: 50px;
+        position: relative;
+        left: 115px;
+        padding-bottom: 4%;
+        display: unset;
+    } */
+
+    nav {
+        flex-flow: column wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    nav :last-child {
+        order: 1;
+    }
+
+    nav a {
+        border-top: 1px solid darkgray;
+        border-bottom: 1px solid darkgray;
+        padding-top: 4%;
+        padding-bottom: 4%;   
+        width: 100%; 
+        order: 2;
+    }
+
+   .header-image {
+        display: none;
+    }
+
+    .top {
+        flex-direction: column;
+        padding-bottom: 15%;
+    }
+
+    button {
+        width: 30%;    
+    }
+
+    .above-image {
+        flex-direction: column;
+    }
+
+    .below-image {
+        flex-direction: column;
+    }
+} 
