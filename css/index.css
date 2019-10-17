@@ -155,10 +155,6 @@ footer {
 }
 
 @media(max-width: 800px) {
-    /* .container {
-        max-width: 800px;
-    } */
-
     header {
         display: flex;
         flex-direction: column;
@@ -172,12 +168,6 @@ footer {
     .logo {
         display: none;
     }
-
-    /* .logo {
-        width: 50%;
-        height: 50px;
-        padding-bottom: 4%;
-    } */
 
     nav {
         flex-direction: row;
@@ -210,12 +200,6 @@ footer {
 }
 
 @media(max-width: 500px) {
-
-  /* I don't think I need the container class below/no noticeable changes w or w/o.  */
-    /* .container {
-        max-width: 500px;
-    } */
-
     .alt-view {
         display: flex;
         justify-content: center;
@@ -224,15 +208,6 @@ footer {
     .logo {
         display: none;
     }
-
-    /* .logo {
-        width: 50%;
-        height: 50px;
-        position: relative;
-        left: 115px;
-        padding-bottom: 4%;
-        display: unset;
-    } */
 
     nav {
         flex-flow: column wrap;
