@@ -155,9 +155,9 @@ footer {
 }
 
 @media(max-width: 800px) {
-    .container {
+    /* .container {
         max-width: 800px;
-    }
+    } */
 
     header {
         display: flex;
@@ -212,9 +212,9 @@ footer {
 @media(max-width: 500px) {
 
   /* I don't think I need the container class below/no noticeable changes w or w/o.  */
-    .container {
+    /* .container {
         max-width: 500px;
-    }
+    } */
 
     .alt-view {
         display: flex;
